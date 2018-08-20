@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+// 项目基本信息
+group 'com.zxk175'
+version '1.0.0'
+
+// JVM 版本号要求
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// java编译的时候缺省状态下会因为中文字符而失败
+[compileJava, compileTestJava, javadoc]*.options*.encoding = 'utf-8'
+
+repositories {
+    mavenLocal()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+}
+
+dependencies {
+    compile "org.projectlombok:lombok:1.18.2"
+    compile "com.hankcs:hanlp:portable-1.6.7"
+    compile "com.google.guava:guava:26.0-jre"
+    compile "cn.hutool:hutool-core:4.1.8"
+}

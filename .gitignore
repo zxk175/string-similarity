@@ -1,0 +1,42 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*/.gradle
+**/*.iml
+/logs
+/build/*
+classes/*
+/aegiscar-common/src/main/java/com/sdyc/aegiscar/controller
+/aegiscar-common/src/main/java/com/sdyc/aegiscar/mapper/xml
+aegiscar-core/build/*
+aegiscar-core/out/*
+aegiscar-admin/build/*
+aegiscar-admin/out/*
+aegiscar-conf/build/*
+aegiscar-conf/out/*
+aegiscar-pay/build/*
+aegiscar-pay/out/*
+aegiscar-ll-pay/build/*
+aegiscar-ll-pay/out/*
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
